@@ -1,1 +1,13 @@
-{"description":"High-throughput GitHub-compatible forge with GraphQL AST caching and tree closure memoization","engines":{"node":">=22.18"},"license":"MIT","name":"ningguang-git-forge","private":true,"scripts":{"start":"node --experimental-strip-types main.ts"},"type":"module","version":"1.2.0"}
+{
+  "name": "github-core-clone-01-ningguang3149",
+  "version": "0.1.0",
+  "description": "Single-Pass Git Smart-HTTP & REST v3 Fast-Path Daemon",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "start": "node --experimental-strip-types main.ts"
+  }
+}

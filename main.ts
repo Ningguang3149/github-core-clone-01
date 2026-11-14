@@ -1,5 +1,5 @@
-// Entry lifecycle for github-core-clone-01 (Ningguang3149 forge engine).
-// Listens on an ephemeral kernel port, registers with MAKEFUN_ENV_URL, and polls /done.
+// Entry point for github-core-clone-01 (VerssX single-file forge).
+// Binds an ephemeral TCP port, registers with MAKEFUN_ENV_URL, and polls /done until completion.
 
 import { createApp } from './app.ts';
 
@@ -10,8 +10,8 @@ if (ENV_URL === '') {
 }
 
 const REQUEST_TIMEOUT_MS = 30_000;
-const RETRY_INITIAL_MS = 180;
-const RETRY_MAX_MS = 1_800;
+const RETRY_INITIAL_MS = 200;
+const RETRY_MAX_MS = 1_500;
 
 const sleep = (ms: number): Promise<void> => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -46,7 +46,7 @@ async function waitForDone(): Promise<void> {
         if (body.done === true) return;
       }
     } catch {
-      // Transient timeout or startup delay; retry after backoff.
+      // Poll again after backoff when the harness env is still starting or busy.
     }
     await sleep(retryDelay(attempt));
   }
