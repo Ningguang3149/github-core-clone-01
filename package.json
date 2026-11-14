@@ -1,0 +1,1 @@
+{"description":"High-throughput GitHub-compatible forge with GraphQL AST caching and tree closure memoization","engines":{"node":">=22.18"},"license":"MIT","name":"ningguang-git-forge","private":true,"scripts":{"start":"node --experimental-strip-types main.ts"},"type":"module","version":"1.2.0"}
