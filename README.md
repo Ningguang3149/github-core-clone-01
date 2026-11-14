@@ -1,4 +1,4 @@
-# github-core-clone-01 — Single-Pass Git Smart-HTTP & REST v3 Fast-Path Daemon
+# github-core-clone-01 — Single-Pass Git Smart-HTTP and REST v3 Fast-Path Daemon
 
 Dedicated in-memory GitHub-compatible git forge engineered by @ningguang3149 for make.fun.
 

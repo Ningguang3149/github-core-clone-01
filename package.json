@@ -1,7 +1,7 @@
 {
   "name": "github-core-clone-01-ningguang3149",
   "version": "0.1.0",
-  "description": "Single-Pass Git Smart-HTTP & REST v3 Fast-Path Daemon",
+  "description": "Single-Pass Git Smart-HTTP and REST v3 Fast-Path Daemon",
   "type": "module",
   "private": true,
   "engines": {

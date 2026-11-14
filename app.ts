@@ -1,5 +1,5 @@
 /**
- * Single-Pass Git Smart-HTTP & REST v3 Fast-Path Daemon
+ * Single-Pass Git Smart-HTTP and REST v3 Fast-Path Daemon
  * Author: @ningguang3149 (Ningguang3149)
  * Engine Architecture: HTTP (120/120 Conformance Verified)
  * Logical Clock: Deterministic Monotonic Counter
